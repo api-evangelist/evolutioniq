@@ -1,8 +1,26 @@
 aid: evolutioniq
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/evolutioniq.png
 name: EvolutionIQ
-description: 'EvolutionIQ is a company surfaced as a portfolio company of first-round-capital, iconiq-capital
-  and added to the API Evangelist network as a stub for enrichment. Sector: ai. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: 'EvolutionIQ is an AI-native insurance technology company providing claims guidance
+  software for the insurance industry. Its platform surfaces claim-specific, actionable guidance to
+  help claims professionals resolve complex cases, spanning Auto Casualty, Group & Individual Disability,
+  Workers'' Compensation, and Income Protection lines of business, plus Medhub, which converts unstructured
+  medical records into claim-specific insights. Backed by First Round Capital and ICONIQ Capital, the
+  company reports outcomes such as a 5-10 point reduction in combined ratio and 20%+ improvement in
+  handling capacity. EvolutionIQ operates as a B2B enterprise vendor and does not publish a public
+  developer API, SDKs, or API documentation; this profile captures its identity and public-surface
+  security posture for the API Evangelist network.'
 url: https://raw.githubusercontent.com/api-evangelist/evolutioniq/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +31,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Ai
+- Insurance
+- InsurTech
+- Claims
+- Machine Learning
+- Health
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +47,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/evolutioniq-domain-security.yml
 - type: Website
   url: https://evolutioniq.com
+- type: Blog
+  url: https://evolutioniq.com/resources
+- type: PrivacyPolicy
+  url: https://evolutioniq.com/legal/privacy-policy
+- type: LinkedIn
+  url: https://www.linkedin.com/company/evolution-iq/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
